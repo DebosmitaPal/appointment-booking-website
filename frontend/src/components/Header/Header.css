@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 0.5rem;
+  filter: sepia(1) saturate(5) hue-rotate(-15deg) brightness(1.1);
+}
+.brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.1rem;
+  font-weight: bold;
+  color: #ff9800;
+  letter-spacing: 1px;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: #ff6d00;
+  font-weight: 500;
+  position: relative;
+  padding: 0.3rem 0.7rem;
+  border-radius: 4px;
+  transition: background 0.2s, color 0.2s;
+}
+.navbar a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0.1rem;
+  width: 100%;
+  height: 3px;
+  background: #ff9800;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transition: transform 0.2s cubic-bezier(0.4,0,0.2,1);
+}
+.navbar a:hover::after,
+.navbar a:focus::after,
+.navbar a.active::after {
+  transform: scaleX(1);
+}
+.navbar a:hover {
+  background: #fff3e0;
+}
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background: #fff;
+  min-width: 180px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  border-radius: 6px;
+  z-index: 100;
+  flex-direction: column;
+}
+.dropdown:hover .dropdown-content {
+  display: flex;
+}
+.dropdown-content a {
+  color: #222;
+  padding: 0.7rem 1rem;
+  text-align: left;
+  border-radius: 0;
+  background: none;
+}
+.dropdown-content a:hover {
+  background: #fff3e0;
+}
+.create-account-btn {
+  background: #fff3e0;
+  color: #ff6d00;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 1rem;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 12px 2px #ff980088;
+  text-decoration: none;
+  position: relative;
+  z-index: 1;
+}
+.create-account-btn::after {
+  display: none !important;
+}
+.create-account-btn:hover {
+  background: #fff3e0;
+  color: #ff6d00;
+  box-shadow: 0 0 24px 6px #ff9800cc;
+} 
+
+.header-blue .brand {
+  color: #2563eb;
+}
+.header-blue .navbar a {
+  color: #2563eb;
+}
+.header-blue .navbar a::after {
+  background: #38bdf8;
+}
+.header-blue .navbar a:hover {
+  background: #e0f2fe;
+  color: #1e40af;
+}
+.header-blue .create-account-btn {
+  background: #e0f2fe;
+  color: #2563eb;
+  box-shadow: 0 0 12px 2px #38bdf888;
+}
+.header-blue .create-account-btn:hover {
+  background: #bae6fd;
+  color: #1e40af;
+  box-shadow: 0 0 24px 6px #38bdf8cc;
+} 
+
+.header-blue .logo {
+  filter: brightness(1.1) sepia(1) saturate(6) hue-rotate(175deg) drop-shadow(0 0 8px #38bdf8aa);
+} 
+
+.header-pink {
+  background: #fff;
+  border-bottom: 3px solid #d81b60;
+  box-shadow: 0 2px 24px 0 #ff69b422;
+}
+.header-pink .brand {
+  color: #d81b60;
+  text-shadow: 0 0 8px #ff69b4aa;
+}
+.header-pink .navbar a {
+  color: #d81b60;
+}
+.header-pink .navbar a::after {
+  background: #ff69b4;
+}
+.header-pink .navbar a:hover {
+  background: #ffe0f0;
+  color: #b84d7c;
+}
+.header-pink .create-account-btn {
+  background: #ffe0f0;
+  color: #d81b60;
+  box-shadow: 0 0 16px 2px #ff69b488;
+}
+.header-pink .create-account-btn:hover {
+  background: #ffd1ea;
+  color: #b84d7c;
+  box-shadow: 0 0 32px 8px #ff69b4cc;
+}
+.header-pink .logo {
+  filter: brightness(1.1) sepia(1) saturate(12) hue-rotate(-30deg) drop-shadow(0 0 16px #ff69b4cc);
+} 
+
+/*  */
+
+.header-green .brand {
+  color: #22c55e;
+  text-shadow: none;
+}
+.header-green .navbar a {
+  color: #22c55e;
+  text-shadow: none;
+}
+.header-green .navbar a:hover {
+  color: #166534;
+  text-shadow: none;
+  background: #e6f9ef;
+}
+.header-green .navbar a::after {
+  background: #22c55e;
+}
+.header-green .create-account-btn {
+  background: #e6f9ef;
+  color: #22c55e;
+  box-shadow: none;
+  border: 2px solid #22c55e;
+}
+.header-green .create-account-btn:hover {
+  background: #bbf7d0;
+  color: #166534;
+  box-shadow: none;
+}
+/* .header-green .logogrooming {
+  filter: brightness(1.1) sepia(1) saturate(8) hue-rotate(85deg);
+}  */

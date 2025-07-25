@@ -1,0 +1,618 @@
+/* Remove all dark backgrounds */
+body {
+  background: #fff !important;
+}
+.hra-hero-container,
+.hra-stat,
+.hra-service-card,
+.hra-whyhire-illustration,
+.hra-appointment-section,
+.hra-appointment-form input,
+.hra-appointment-form textarea {
+  background: #f8fafc;
+  color: #222;
+}
+.hra-services-section,
+.hra-whyhire-section,
+.hra-whyhire-content,
+.hra-appointment-content {
+  background: #f1f5f9;
+}
+
+/* Restrict dark backgrounds to HomeRepair-specific classes only */
+.hra-hero-container {
+  min-height: 100%;
+  background: url("./assets/handymanbackground.jpg") center center/cover no-repeat;
+  color: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+
+.hra-hero-overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: rgba(34, 197, 94, 0.18); /* light green overlay */
+  padding: 48px 24px;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.hra-hero-overlay > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.hra-hero-overlay img {
+  max-height: 260px;
+  width: auto;
+  height: auto;
+}
+
+.hra-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #166534 !important;
+  text-shadow: none !important;
+}
+.hra-title span {
+  color: #22c55e !important;
+  text-shadow: none !important;
+}
+
+.hra-subtitle {
+  font-size: 1.15rem;
+  color: #166534;
+  margin-bottom: 36px;
+}
+
+.hra-hero-actions {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 38px;
+}
+
+.hra-btn {
+  font-size: 1.08rem;
+  font-weight: 500;
+  border-radius: 8px;
+  padding: 13px 28px;
+  border: 2px solid #a78bfa;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+
+.hra-btn-primary {
+  background: #7c3aed;
+  color: #fff;
+  border: 2px solid #7c3aed;
+}
+.hra-btn-primary:hover {
+  background: #a78bfa;
+  color: #18181b;
+  border-color: #a78bfa;
+}
+
+.hra-btn,
+.hra-btn-secondary {
+  background: #22c55e;
+  color: #fff;
+  border: 2px solid #22c55e;
+}
+.hra-btn:hover,
+.hra-btn-secondary:hover {
+  background: #4ade80;
+  color: #166534;
+  border-color: #4ade80;
+}
+
+.hra-stats-row {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.hra-stat {
+  background: #f8fafc;
+  border-radius: 50%;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 16px #bbf7d0;
+  border: 2.5px solid #22c55e;
+}
+
+.hra-stat-number {
+  color: #22c55e;
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.hra-stat-label {
+  color: #22c55e;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.hra-illustration-placeholder {
+  width: 260px;
+  height: 260px;
+  background: #e0e7ef;
+  border: 3px dashed #22c55e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.8;
+}
+
+.hra-services-section {
+  background: #f1f5f9;
+  margin-top: 0;
+  padding: 56px 0 64px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hra-services-title {
+  color: #111;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
+
+.hra-services-subtitle {
+  color: #22c55e;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.hra-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px 28px;
+  margin-bottom: 32px;
+  width: 90%;
+  max-width: 950px;
+}
+
+.hra-service-card {
+  background: #f8fafc;
+  border: 2px solid #bbf7d0;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 24px 0;
+  box-shadow: 0 4px 32px #bbf7d0 !important;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+.hra-service-card:hover {
+  border-color: #22c55e;
+}
+
+.hra-service-icon {
+  font-size: 2.3rem;
+  margin-bottom: 18px;
+  color: #22c55e;
+}
+
+.hra-service-label {
+  color: #22c55e;
+  font-size: 1.08rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.hra-services-viewmore {
+  margin-top: 10px;
+  background: transparent;
+  color: #22c55e;
+  border: 2px solid #22c55e;
+  border-radius: 8px;
+  padding: 12px 36px;
+  font-size: 1.08rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+}
+.hra-services-viewmore:hover {
+  background: #22c55e;
+  color: #fff;
+  border-color: #22c55e;
+}
+
+.hra-whyhire-section {
+  background: #f1f5f9;
+  margin-top: 0;
+  padding: 64px 0 64px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hra-whyhire-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  background: #f8fafc;
+  border-radius: 32px;
+  box-shadow: 0 0 24px 12px #22c55e, 0 0 96px 24px #22c55e;
+  padding: 48px 32px;
+  gap: 32px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.hra-whyhire-left {
+  flex: 1 1 0;
+  padding: 48px 32px 48px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hra-whyhire-heading {
+  color: #22c55e;
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 0.04em;
+}
+
+.hra-whyhire-title {
+  color: #22c55e;
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 22px;
+}
+
+.hra-whyhire-desc {
+  color: #166534;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  max-width: 480px;
+}
+
+.hra-whyhire-right {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0 32px 0;
+}
+
+.hra-whyhire-illustration {
+  width: 320px;
+  height: 320px;
+  background: #f8fafc;
+  border-radius: 160px 160px 0 0;
+  opacity: 0.8;
+  box-shadow: 0 0 32px 8px #bbf7d0;
+}
+
+.hra-appointment-section {
+  background: #f8fafc;
+  padding: 70px 0 70px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.hra-appointment-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  max-width: 1100px;
+  width: 100%;
+  background: #f1f5f9;
+  border-radius: 32px;
+  box-shadow: 0 0 12px 4px #bbf7d0, 0 0 32px 8px #22c55e;
+  padding: 32px 32px 32px 32px;
+  gap: 32px;
+}
+
+.hra-appointment-left {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-right: 24px;
+}
+
+.hra-appointment-title {
+  color: #22c55e;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.hra-appointment-subtitle {
+  color: #22c55e;
+  font-size: 1.08rem;
+  margin-bottom: 28px;
+}
+
+.hra-appointment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.hra-appointment-form input,
+.hra-appointment-form textarea {
+  background: #f8fafc;
+  color: #22c55e;
+  border: 1.5px solid #22c55e;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.2s;
+}
+.hra-appointment-form input:focus,
+.hra-appointment-form textarea:focus {
+  border-color: #22c55e;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+  background: #f8fafc;
+  color: #22c55e;
+  border: 1.5px solid #22c55e;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 1.1rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+}
+input[type="text"]::placeholder,
+input[type="tel"]::placeholder,
+input[type="email"]::placeholder,
+textarea::placeholder {
+  color: #4ade80;
+  opacity: 1;
+  text-shadow: none;
+}
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus {
+  box-shadow: 0 0 8px 2px #bbf7d0;
+  border-color: #22c55e;
+}
+
+input[type="date"], input[type="time"] {
+  background: #f8fafc;
+  color: #22c55e;
+  border: 1.5px solid #22c55e;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 1.1rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+}
+input[type="date"]::-webkit-input-placeholder,
+input[type="time"]::-webkit-input-placeholder {
+  color: #4ade80;
+  opacity: 1;
+}
+input[type="date"]::-moz-placeholder,
+input[type="time"]::-moz-placeholder {
+  color: #4ade80;
+  opacity: 1;
+}
+input[type="date"]:-ms-input-placeholder,
+input[type="time"]:-ms-input-placeholder {
+  color: #4ade80;
+  opacity: 1;
+}
+input[type="date"]::placeholder,
+input[type="time"]::placeholder {
+  color: #4ade80;
+  opacity: 1;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(0.5) brightness(1.5);
+}
+
+textarea {
+  background: #f8fafc;
+  color: #22c55e;
+  border: 1.5px solid #22c55e;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-size: 1.1rem;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 18px;
+  resize: vertical;
+  box-shadow: 0 0 8px 2px #bbf7d0;
+}
+
+.hra-appointment-submit {
+  background: #22c55e;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s, color 0.2s;
+}
+.hra-appointment-submit:hover {
+  background: #4ade80;
+  color: #166534;
+}
+
+.hra-appointment-right {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 24px;
+}
+
+.hra-appointment-illustration {
+  width: 220px;
+  height: 180px;
+  background: #18181b;
+  border-radius: 24px;
+  margin-bottom: 32px;
+  opacity: 0.8;
+  box-shadow: 0 0 64px 24px #4ade80, 0 0 128px 32px #bbf7d0;
+}
+
+.hra-appointment-contactinfo {
+  background: #f8fafc;
+  border-radius: 16px;
+  padding: 18px 20px;
+  margin-bottom: 10px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 16px -2px #bbf7d0, 4px 0 16px -2px #bbf7d0, -4px 0 16px -2px #bbf7d0;
+}
+
+.hra-appointment-contactrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #22c55e;
+  font-size: 1rem;
+}
+
+.hra-appointment-contacticon {
+  font-size: 1.2rem;
+  color: #4ade80;
+}
+
+.hra-appointment-socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 8px;
+}
+
+.hra-appointment-socialicon {
+  font-size: 1.4rem;
+  color: #4ade80;
+  background: #f8fafc;
+  border-radius: 50%;
+  padding: 8px;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+}
+.hra-appointment-socialicon:hover {
+  background: #4ade80;
+  color: #f8fafc;
+}
+
+.hra-hero-rounded-wrapper {
+  border-radius: 32px;
+  overflow: hidden;
+  box-shadow: 0 0 96px 24px #22c55e, 0 0 64px 16px #22c55e, 0 8px 48px 0 #22c55e;
+  margin: 32px auto 32px auto;
+  max-width: 1200px;
+  background: transparent;
+  min-height: 400px;
+  max-height: 520px;
+  border-top: 3px solid #22c55e;
+}
+/* Remove global violet color override. Only apply glow to .hra-title and .hra-title span as needed. */
+ .hra-title {
+   text-shadow: 0 0 8px #a78bfa88;
+ }
+ .hra-title span {
+   text-shadow: 0 0 8px #a78bfa88;
+ }
+
+@media (max-width: 900px) {
+  .hra-hero-overlay {
+    padding: 32px 20px;
+  }
+  .hra-stats-row {
+    gap: 16px;
+  }
+  .hra-stat {
+    width: 90px;
+    height: 90px;
+  }
+  .hra-whyhire-content {
+    flex-direction: column;
+    padding: 10px 10px;
+  }
+  .hra-whyhire-left {
+    padding: 32px 0 0 0;
+    align-items: center;
+    text-align: center;
+  }
+  .hra-whyhire-right {
+    padding: 24px 0 32px 0;
+  }
+  .hra-whyhire-illustration {
+    width: 180px;
+    height: 180px;
+  }
+  .hra-appointment-content {
+    flex-direction: column;
+    padding: 18px 6px;
+    gap: 18px;
+  }
+  .hra-appointment-left {
+    padding-right: 0;
+  }
+  .hra-appointment-right {
+    align-items: stretch;
+  }
+  .hra-appointment-illustration {
+    width: 100%;
+    max-width: 320px;
+    height: 120px;
+  }
+}
+@media (max-width: 1000px) {
+  .hra-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px 16px;
+  }
+}
+@media (max-width: 600px) {
+  .hra-services-grid {
+    grid-template-columns: 1fr;
+    gap: 16px 0;
+  }
+  .hra-services-subtitle {
+    font-size: 1.3rem;
+  }
+} 

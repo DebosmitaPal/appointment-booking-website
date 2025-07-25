@@ -1,0 +1,68 @@
+.patient-form-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(60,60,120,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+}
+.patient-form-container h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #23272f;
+}
+.patient-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.patient-form label {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1rem;
+  color: #444;
+  font-weight: 500;
+}
+.patient-form input {
+  margin-top: 0.4rem;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-size: 1rem;
+  width: 100%;
+  transition: border 0.18s;
+}
+.patient-form input:focus {
+  border-color: #38bdf8;
+  outline: none;
+}
+.patient-form button {
+  margin-top: 1.2rem;
+  background: #38bdf8;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.18s;
+}
+.patient-form button:hover {
+  background: #0ea5e9;
+}
+.patient-form-success {
+  max-width: 400px;
+  margin: 3rem auto;
+  background: #e0f2fe;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(60,60,120,0.10);
+  padding: 2.5rem 2rem 2rem 2rem;
+  text-align: center;
+  color: #0369a1;
+  font-size: 1.2rem;
+  font-weight: 600;
+} 

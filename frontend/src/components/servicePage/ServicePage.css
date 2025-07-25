@@ -1,0 +1,14 @@
+.service-page {
+  padding: 2.5rem 0 2.5rem 0;
+  text-align: center;
+  background: #fff;
+  min-height: 300px;
+}
+.service-page h2 {
+  color: #ff9800;
+  font-size: 2rem;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+} 

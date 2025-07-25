@@ -1,0 +1,49 @@
+.related-doctors-card-container {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(60,60,120,0.10), 0 2px 8px rgba(0,0,0,0.04), 0 0 24px 4px rgba(56,189,248,0.25);
+  padding: 2rem 2rem 2.5rem 2rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.related-doctors-card-container:hover {
+  box-shadow: 0 4px 32px rgba(60,60,120,0.14), 0 2px 12px rgba(0,0,0,0.08), 0 0 36px 8px rgba(56,189,248,0.45);
+  transition: box-shadow 0.25s;
+}
+
+.related-doctors-card-heading {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #23272f;
+  margin-bottom: 0.7rem;
+  text-align: center;
+}
+
+.related-doctors-card-description {
+  font-size: 1.1rem;
+  color: #64748b;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+.related-doctors-card-list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media (max-width: 900px) {
+  .related-doctors-card-container {
+    padding: 1rem 0.3rem 1.5rem 0.3rem;
+  }
+  .related-doctors-card-list {
+    gap: 0.7rem;
+  }
+} 

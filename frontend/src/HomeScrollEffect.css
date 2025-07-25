@@ -1,0 +1,44 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.23, 1, 0.32, 1), transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: opacity, transform;
+}
+
+.reveal-on-scroll.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.faq-pop {
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+  transition: opacity 0.7s cubic-bezier(0.23, 1, 0.32, 1), transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  will-change: opacity, transform;
+}
+.faq-pop.faq-pop-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.faq-pop.from-left {
+  transform: translateX(-80px) scale(0.96);
+}
+.faq-pop.faq-pop-visible.from-left {
+  transform: translateX(0) scale(1);
+}
+.faq-pop.from-bottom {
+  transform: translateY(80px) scale(0.96);
+}
+.faq-pop.faq-pop-visible.from-bottom {
+  transform: translateY(0) scale(1);
+}
+.faq-pop.from-right {
+  transform: translateX(80px) scale(0.96);
+}
+.faq-pop.faq-pop-visible.from-right {
+  transform: translateX(0) scale(1);
+} 

@@ -1,0 +1,210 @@
+.doctor-detail-main {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 2.5rem;
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+.doctor-detail-booking {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(60,60,120,0.10), 0 2px 8px rgba(0,0,0,0.04), 0 0 24px 4px rgba(56,189,248,0.25);
+  padding: 2rem 2rem 2.5rem 2rem;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.doctor-detail-booking:hover {
+  box-shadow: 0 4px 32px rgba(60,60,120,0.14), 0 2px 12px rgba(0,0,0,0.08), 0 0 36px 8px rgba(56,189,248,0.45);
+  transition: box-shadow 0.25s;
+}
+.doctor-detail-imgbox {
+  flex: 0 0 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0f2fe;
+  border-radius: 18px;
+  padding: 1.2rem;
+}
+.doctor-detail-img {
+  width: 180px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(60,60,120,0.08), 0 0 24px rgba(56, 189, 248, 0.6);
+  transition: box-shadow 0.3s ease;
+}
+
+.doctor-detail-img:hover {
+  box-shadow: 0 4px 20px rgba(60,60,120,0.12), 0 0 32px rgba(56, 189, 248, 0.7);
+}
+.doctor-detail-info {
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.doctor-detail-info h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0 0 0.5rem 0;
+  color: #23272f;
+}
+.doctor-detail-specialty {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #38bdf8;
+  margin-left: 0.7rem;
+}
+.doctor-detail-meta {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 1.05rem;
+  color: #555;
+}
+.doctor-detail-about {
+  font-size: 1.05rem;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.doctor-detail-about-label {
+  text-decoration: underline;
+  color: #23272f;
+}
+
+.doctor-detail-about-text {
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.doctor-detail-experience {
+  background: #e0f2fe;
+  border: 1px solid #38bdf8;
+  border-radius: 20px;
+  padding: 0.3rem 0.8rem;
+  font-size: 0.9rem;
+  color: #0369a1;
+  font-weight: 600;
+}
+
+.doctor-detail-fee {
+  font-size: 1.1rem;
+  color: #0ea5e9;
+  font-weight: 700;
+}
+.doctor-detail-booking-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1e293b;
+  text-align: center;
+}
+
+.doctor-detail-booking-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+.doctor-detail-dates {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+.doctor-detail-date-btn {
+  background: #e0f2fe;
+  border: none;
+  border-radius: 12px;
+  padding: 0.7rem 1.1rem;
+  font-size: 1rem;
+  color: #0369a1;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s, color 0.18s;
+}
+.doctor-detail-date-btn.selected, .doctor-detail-date-btn:hover {
+  background: #38bdf8;
+  color: #fff;
+}
+.doctor-detail-book-btn {
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.9rem 2.2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  transition: background 0.18s;
+}
+.doctor-detail-book-btn:hover {
+  background: #2563eb;
+}
+.doctor-detail-slots {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin: 1rem 0 0.5rem 0;
+}
+.doctor-detail-slot-btn {
+  background: #e0e7ef;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1.1rem;
+  font-size: 1rem;
+  color: #23272f;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background 0.18s, color 0.18s;
+}
+.doctor-detail-slot-btn.selected, .doctor-detail-slot-btn:hover {
+  background: #6366f1;
+  color: #fff;
+}
+.doctor-detail-related {
+  margin-top: 3rem;
+}
+.doctor-detail-related h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: #23272f;
+}
+.doctor-detail-related-list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.doctor-detail-related-description {
+  font-size: 1.1rem;
+  color: #64748b;
+  text-align: center;
+  margin-top: 1.5rem;
+  line-height: 1.6;
+  font-style: italic;
+}
+@media (max-width: 900px) {
+  .doctor-detail-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  .doctor-detail-imgbox {
+    padding: 0.7rem;
+  }
+  .doctor-detail-img {
+    width: 120px;
+    height: 140px;
+  }
+  .doctor-detail-related-list {
+    gap: 0.7rem;
+  }
+} 

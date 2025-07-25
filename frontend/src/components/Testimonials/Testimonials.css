@@ -1,0 +1,72 @@
+.testimonials {
+  position: relative;
+  overflow: hidden;
+  min-height: 260px;
+  background: #fff;
+  text-align: center;
+  padding: 2.5rem 0 2.5rem 0;
+}
+.testimonials h2 {
+  color: #ff9800;
+  margin-bottom: 2.2rem;
+  position: relative;
+  z-index: 2;
+  font-family: 'Lobster', cursive;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1px;
+}
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  position: relative;
+  min-height: 170px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.marquee-content {
+  display: flex;
+  gap: 8.5rem;
+  animation: marquee 60s linear infinite;
+}
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-card {
+  background: #fff3e0;
+  border-radius: 18px;
+  padding: 1.2rem 1.2rem;
+  min-width: 220px;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.15rem;
+  color: #222;
+  position: relative;
+  margin-bottom: 0.5rem;
+  transition: box-shadow 0.2s, transform 0.2s;
+  word-break: break-word;
+  white-space: normal;
+  box-shadow: 0 0 16px 2px #ffb74d55, 0 2px 12px #ff980044;
+}
+.marquee-card:hover {
+  box-shadow: 0 0 32px 8px #ff980099, 0 4px 24px #ffb74d88;
+  transform: scale(1.04);
+}
+.marquee-card div {
+  font-style: italic;
+  margin-bottom: 0.7rem;
+}
+.marquee-card span {
+  font-size: 1.1rem;
+  color: #ff9800;
+  font-weight: 600;
+} 
