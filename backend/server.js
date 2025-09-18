@@ -131,9 +131,8 @@ app.post('/api/contact', async (req, res) => {
   }
 });
 
-// Health check route
-app.get('/api/health', (req, res) => {
-  res.json({ status: 'Backend is running!' });
+app.get('/', (req, res) => {
+  res.send('Backend is running!');
 });
 
 const PORT = process.env.PORT || 5000;
