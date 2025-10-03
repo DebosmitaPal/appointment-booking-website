@@ -208,15 +208,3 @@ VITE_API_URL=http://localhost:5000
 ## Brief Description
 
 This website allows users to book appointments for a variety of services, including medical, beauty, and home repair. Users can sign up, log in, browse service providers, book appointments, and contact the site admin. The backend handles authentication, appointment management, and email notifications, while the frontend provides a modern, responsive user experience.
-
----
-
-## License
-
-MIT
-
----
-
-## Contact
-
-For any issues or feature requests, please open an issue or contact the maintainer. 
